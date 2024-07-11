@@ -1,11 +1,14 @@
 import NavBar from "../components/NavBar";
+import Hero from "../sections/Hero";
 
 function HomePage() {
   return (
     <>
       <header>
         <NavBar />
-        <section>Hero page</section>
+        <section>
+          <Hero />
+        </section>
       </header>
       <main>
         <section>expore feasto</section>
