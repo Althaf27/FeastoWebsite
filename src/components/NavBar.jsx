@@ -78,8 +78,12 @@ export default function NavBar() {
           </nav>
         </div>
         <div className="flex flex-row gap-4">
-          <OutlineButton>Get a demo</OutlineButton>
-          <Button>Sign up for free</Button>
+          <OutlineButton className="hidden xl:block px-6 py-[14px]">
+            Get a demo
+          </OutlineButton>
+          <Button className="py-[9px] px-[17px] md:py-[14px] md:px-[25px]">
+            Sign up for free
+          </Button>
         </div>
       </div>
     </section>

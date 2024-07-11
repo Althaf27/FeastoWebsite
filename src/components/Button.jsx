@@ -1,6 +1,8 @@
-function Button({ children }) {
+function Button({ children, className }) {
   return (
-    <button className="font-medium text-white bg-primary-color py-[9px] px-[17px] rounded-md md:py-[14px] md:px-[25px]">
+    <button
+      className={`font-medium text-white bg-primary-color  rounded-md font-inter   ${className}`}
+    >
       {children}
     </button>
   );
