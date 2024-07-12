@@ -3,6 +3,10 @@ import response from "../assets/icons/response.svg";
 import increase from "../assets/icons/increase.svg";
 import control from "../assets/icons/control.svg";
 
+import restaurant from "../assets/images/restaurant.png";
+import groceryStore from "../assets/images/groceryStore.png";
+import reatilStore from "../assets/images/retailStore.png";
+
 export const exploreData = [
   {
     imgURL: launch,
@@ -35,3 +39,27 @@ export const customerResults = {
   deliveries: 85,
   totalCustomes: "10,456",
 };
+
+export const templateDetails = [
+  {
+    imgURL: restaurant,
+    title: "Restaurants & Food Businesses",
+    content:
+      "Build an online store showcasing dishes with eye-catching images & easily update prices with our templates.",
+    url: "#", // change the url to the page of the template
+  },
+  {
+    imgURL: groceryStore,
+    title: "Grocery Store",
+    content:
+      "Get your grocery store online with a user-friendly design that enhances your customers' shopping experience.",
+    url: "#", // change the url to the page of the template
+  },
+  {
+    imgURL: restaurant,
+    title: "Fashion Store",
+    content:
+      "Create a stunning showcase for your latest collections with our stylish templates and user-friendly interface.",
+    url: "#", // change the url to the page of the template
+  },
+];

@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Explore from "../sections/Explore";
 import Hero from "../sections/Hero";
+import Templates from "../sections/Templates";
 
 function HomePage() {
   return (
@@ -15,7 +16,9 @@ function HomePage() {
         <section>
           <Explore />
         </section>
-        <section>kickstart</section>
+        <section>
+          <Templates />
+        </section>
         <section>price</section>
         <section>faq</section>
         <section>contact</section>
