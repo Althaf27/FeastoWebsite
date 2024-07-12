@@ -23,7 +23,7 @@ function BrancdScroll() {
     return () => clearInterval(scrollInterval);
   }, []);
   return (
-    <div className="overflow-hidden pb-24">
+    <div className="overflow-hidden ">
       <div ref={scrollRef} className="flex gap-9  space-x-4 animate-scroll">
         {brandLogos.map((logo, index) => (
           <img key={index} src={logo} alt="brand logos" />

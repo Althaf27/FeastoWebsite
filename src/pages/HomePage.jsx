@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar";
+import Explore from "../sections/Explore";
 import Hero from "../sections/Hero";
 
 function HomePage() {
@@ -11,7 +12,9 @@ function HomePage() {
         </section>
       </header>
       <main>
-        <section>expore feasto</section>
+        <section>
+          <Explore />
+        </section>
         <section>kickstart</section>
         <section>price</section>
         <section>faq</section>
