@@ -4,6 +4,7 @@ import Hero from "../sections/Hero";
 import Pricing from "../sections/Pricing";
 import Templates from "../sections/Templates";
 import FrequentQA from "../sections/FrequentQA";
+import Contacts from "../sections/Contacts";
 
 function HomePage() {
   return (
@@ -27,7 +28,9 @@ function HomePage() {
         <section>
           <FrequentQA />
         </section>
-        <section>contact</section>
+        <section>
+          <Contacts />
+        </section>
       </main>
       <footer>
         <section>feasto</section>
