@@ -3,6 +3,7 @@ import Explore from "../sections/Explore";
 import Hero from "../sections/Hero";
 import Pricing from "../sections/Pricing";
 import Templates from "../sections/Templates";
+import FrequentQA from "../sections/FrequentQA";
 
 function HomePage() {
   return (
@@ -23,13 +24,17 @@ function HomePage() {
         <section>
           <Pricing />
         </section>
-        <section>faq</section>
+        <section>
+          <FrequentQA />
+        </section>
         <section>contact</section>
       </main>
       <footer>
         <section>feasto</section>
         <section>bottom bar</section>
       </footer>
+
+      <div className="h-96 ">a</div>
     </>
   );
 }
