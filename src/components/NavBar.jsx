@@ -19,8 +19,8 @@ export default function NavBar() {
     setSelectedItem(item);
   };
   return (
-    <section>
-      <div className="flex px-[16px] h-[80px]  justify-between items-center shadow-md relative border-b border-gray-200 md:h-[104px]  lg:px-[60px] xl:px-[120px]">
+    <section className="border-b border-gray-200 shadow-md">
+      <div className="flex px-[16px] h-[80px]  justify-between items-center  relative  md:h-[104px]  lg:px-[60px] xl:px-[120px] max-container">
         <div className="flex flex-row items-center gap-[6px] lg:gap-[45px] md:gap-6 xl:gap-16">
           <img
             className="cursor-pointer md:hidden"

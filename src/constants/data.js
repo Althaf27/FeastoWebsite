@@ -125,3 +125,75 @@ export const faqData = [
       "Absolutely! You can cancel your subscription at any time directly from your account settings. If you need assistance, please contact our customer support team at Hai@feasto.io.",
   },
 ];
+
+export const dataForFooter = {
+  company: [
+    {
+      title: "About us",
+      link: "/",
+    },
+    {
+      title: "Contact us",
+      link: "/",
+    },
+    {
+      title: "Careers",
+      link: "/",
+    },
+    {
+      title: "Privacy policy",
+      link: "/",
+    },
+    {
+      title: "Terms & service",
+      link: "/",
+    },
+  ],
+  templates: [
+    {
+      title: "Restaurants & Food Stalls",
+      link: "/",
+    },
+    {
+      title: "Retail stores",
+      link: "/",
+    },
+    {
+      title: "Fashion stores",
+      link: "/",
+    },
+  ],
+  resources: [
+    {
+      title: "Blogs",
+      link: "/",
+    },
+    {
+      title: "Knowledge base",
+      link: "/",
+    },
+    {
+      title: "Help center",
+      link: "/",
+    },
+  ],
+
+  features: [
+    {
+      title: "WhatsApp order management",
+      link: "/",
+    },
+    {
+      title: "Digital storefront",
+      link: "/",
+    },
+    {
+      title: "Insightful analytics",
+      link: "/",
+    },
+    {
+      title: "Effortless offer management",
+      link: "/",
+    },
+  ],
+};

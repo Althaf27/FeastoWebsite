@@ -5,17 +5,18 @@ import Pricing from "../sections/Pricing";
 import Templates from "../sections/Templates";
 import FrequentQA from "../sections/FrequentQA";
 import Contacts from "../sections/Contacts";
+import Footer from "../sections/Footer";
 
 function HomePage() {
   return (
     <>
       <header>
         <NavBar />
-        <section>
+        <section className="max-container">
           <Hero />
         </section>
       </header>
-      <main>
+      <main className="max-container">
         <section>
           <Explore />
         </section>
@@ -33,11 +34,10 @@ function HomePage() {
         </section>
       </main>
       <footer>
-        <section>feasto</section>
-        <section>bottom bar</section>
+        <section>
+          <Footer />
+        </section>
       </footer>
-
-      <div className="h-96 ">a</div>
     </>
   );
 }
