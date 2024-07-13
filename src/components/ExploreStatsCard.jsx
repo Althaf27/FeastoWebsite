@@ -9,9 +9,9 @@ function ExploreStatsCard({ children, className, data, perDay, icon }) {
         <p className="text-[18px] text-gray-800 font-inter font-semibold">
           {data}
           {perDay ? (
-            <spam className="text-[12px] text-gray-600 font-inter font-medium">
+            <span className="text-[12px] text-gray-600 font-inter font-medium">
               /day
-            </spam>
+            </span>
           ) : null}
         </p>
       </div>

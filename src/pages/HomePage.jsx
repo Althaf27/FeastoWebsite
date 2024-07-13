@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Explore from "../sections/Explore";
 import Hero from "../sections/Hero";
+import Pricing from "../sections/Pricing";
 import Templates from "../sections/Templates";
 
 function HomePage() {
@@ -19,7 +20,9 @@ function HomePage() {
         <section>
           <Templates />
         </section>
-        <section>price</section>
+        <section>
+          <Pricing />
+        </section>
         <section>faq</section>
         <section>contact</section>
       </main>

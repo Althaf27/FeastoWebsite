@@ -63,3 +63,27 @@ export const templateDetails = [
     url: "#", // change the url to the page of the template
   },
 ];
+
+export const proPlanFeatures = {
+  available: [
+    "Unlimited orders",
+    "Unlimited products listing",
+    "Unlimited offer creation",
+    "Monthly 2 hrs Marketing support",
+    "Premium customer care",
+    "Custom domain",
+  ],
+  notAvailable: [],
+};
+export const freePlanFeatures = {
+  available: [
+    "Unlimited orders",
+    "Unlimited products listing",
+    "Unlimited offer creation",
+  ],
+  notAvailable: [
+    "Monthly 2 hrs Marketing support",
+    "Premium customer care",
+    "Custom domain",
+  ],
+};
