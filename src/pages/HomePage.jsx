@@ -7,6 +7,11 @@ import FrequentQA from "../sections/FrequentQA";
 import Contacts from "../sections/Contacts";
 import Footer from "../sections/Footer";
 
+/**
+ * Used to display when the user navigate to the root url (`/`).
+ *@component
+ * @returns {JSX.Element} The home page of the website
+ */
 function HomePage() {
   return (
     <>
@@ -20,10 +25,10 @@ function HomePage() {
         <section>
           <Explore />
         </section>
-        <section>
+        <section id="templates">
           <Templates />
         </section>
-        <section>
+        <section id="pricing">
           <Pricing />
         </section>
         <section>

@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 function NavItem({ children, onClick, currentSelected }) {
   return (
     <div
@@ -8,7 +10,8 @@ function NavItem({ children, onClick, currentSelected }) {
       } md:hover:bg-white md:p-0 `}
       onClick={() => onClick(children)}
     >
-      <p
+      <HashLink
+        to={`#${children.toLowerCase()}`}
         className={`text-base font-medium leading-6 ${
           children === currentSelected
             ? "text-primary-color"
@@ -17,7 +20,7 @@ function NavItem({ children, onClick, currentSelected }) {
         ${children !== currentSelected ? "md:hover:text-gray-500" : ""} `}
       >
         {children}
-      </p>
+      </HashLink>
     </div>
   );
 }
