@@ -6,6 +6,11 @@ import Templates from "../sections/Templates";
 import FrequentQA from "../sections/FrequentQA";
 import Contacts from "../sections/Contacts";
 import Footer from "../sections/Footer";
+import { selectNavigationItem } from "../slices/navigationSlice";
+import { useSelector } from "react-redux";
+import { useRef } from "react";
+import { useDispatch } from "react-redux";
+import { setNavigation } from "../slices/navigationSlice";
 
 /**
  * Used to display when the user navigate to the root url (`/`).
@@ -13,6 +18,27 @@ import Footer from "../sections/Footer";
  * @returns {JSX.Element} The home page of the website
  */
 function HomePage() {
+  const dispatch = useDispatch();
+  const navigationItem = useSelector(selectNavigationItem);
+  console.log(navigationItem);
+
+  const pricingRef = useRef(null);
+  const templateRef = useRef(null);
+
+  //based on the redux value scroll to the section
+  if (navigationItem === "pricing" && pricingRef.current) {
+    const offsetTop = pricingRef.current.offsetTop - 130;
+    window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    dispatch(setNavigation(""));
+  }
+  if (navigationItem === "templates" && templateRef.current) {
+    const offsetTop = templateRef.current.offsetTop - 130;
+    window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    dispatch(setNavigation(""));
+  }
+
+  //need to implement for the other navigation items after implement the sections for that
+
   return (
     <>
       <header>
@@ -25,10 +51,10 @@ function HomePage() {
         <section>
           <Explore />
         </section>
-        <section id="templates">
+        <section ref={templateRef}>
           <Templates />
         </section>
-        <section id="pricing">
+        <section ref={pricingRef}>
           <Pricing />
         </section>
         <section>

@@ -3,7 +3,7 @@
  * @component
  * @param {string} children - content of the button
  * @param {string} className - to set additional styles like padding
- * @param {Function} handleClick - to handle the click
+ * @param {function} handleClick - to handle the click
  * @returns {JSX.Element}
  */
 function OutlineButton({ children, className, handleClick }) {

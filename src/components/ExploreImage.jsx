@@ -1,16 +1,27 @@
 import ExploreStatsCard from "./ExploreStatsCard";
 
+//images
 import teaMaker from "../assets/images/teaMaker.png";
 import shop from "../assets/images/shop.png";
 import clothesShop from "../assets/images/clothesShop.png";
 import chef from "../assets/images/chef.png";
 
+//icons
 import total from "../assets/icons/total.png";
 import delivery from "../assets/icons/deliveries.png";
 import orders from "../assets/icons/orders.png";
 
+//stat data
 import { customerResults } from "../constants/data";
 
+/**
+ * Render four images in a grid with some details about customer stats
+ * @see {@link ExploreStatsCard}
+ * @component
+ * @returns
+ * @example
+ * <ExploreImage/>
+ */
 function ExploreImage() {
   return (
     <div className="flex justify-center flex-1 items-center">
@@ -45,7 +56,7 @@ function ExploreImage() {
           <div className="absolute -right-5 z-10">
             <ExploreStatsCard
               className="absolute -bottom-5 right-6"
-              data={customerResults.totalCustomes}
+              data={customerResults.totalCustomers}
               perDay={false}
               icon={total}
             >

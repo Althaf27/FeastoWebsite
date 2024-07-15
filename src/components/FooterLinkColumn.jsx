@@ -1,5 +1,16 @@
 import { Link } from "react-router-dom";
 
+/**
+ *Render the link column
+ * @see {@link pageLinks}  - datatype of data
+ * @param {{title,link}} data
+ * @param {string} title
+ * @returns
+ * @example
+ * const data ={title: "About us",link : "/aboutUs"}
+ * <FooterLinkColumn data={data} title="Company"/>
+ */
+
 function FooterLinkColumn({ data, title }) {
   return (
     <div>
@@ -12,7 +23,7 @@ function FooterLinkColumn({ data, title }) {
           <Link
             to={data.link}
             key={index}
-            className="font-inter text-gray-800 text-[16px]"
+            className="font-inter text-gray-800 text-[16px] hover:text-gray-400 transition-all duration-300"
           >
             {data.title}
           </Link>

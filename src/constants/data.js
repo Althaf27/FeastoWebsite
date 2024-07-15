@@ -7,6 +7,20 @@ import restaurant from "../assets/images/restaurant.png";
 import groceryStore from "../assets/images/groceryStore.png";
 import reatilStore from "../assets/images/retailStore.png";
 
+/**
+ * @file This file contains the data needed for the components
+ */
+
+/**
+ * @typedef {object} exploreDataObject
+ * @property {object} imgURL
+ * @property {string} title
+ * @property {string} content
+ */
+
+/**
+ * @type {exploreDataObject[]}
+ */
 export const exploreData = [
   {
     imgURL: launch,
@@ -34,12 +48,33 @@ export const exploreData = [
   },
 ];
 
+/**
+ * @typedef CustomerResult - stats about total number of customers
+ * @property {number} orders
+ * @property {number} deliveries
+ * @property {string} totalCustomers
+ */
+
+/**
+ * @type {CustomerResult}
+ */
 export const customerResults = {
   orders: 124,
   deliveries: 85,
-  totalCustomes: "10,456",
+  totalCustomers: "10,456",
 };
 
+/**
+ * @typedef templateDetail - Details of the templates
+ * @property {object} imgURL
+ * @property {string} title
+ * @property {string} content
+ * @property {string} url - url of the template page
+ */
+
+/**
+ * @type {templateDetail[]}
+ */
 export const templateDetails = [
   {
     imgURL: restaurant,
@@ -64,6 +99,15 @@ export const templateDetails = [
   },
 ];
 
+/**
+ * @typedef plan - Both the available and unavailable features included in plans
+ * @property {Array} available - available featrues
+ * @property {Array} notAvailable - unavailable features
+ */
+
+/**
+ * @type {plan} proPlanFeatures
+ */
 export const proPlanFeatures = {
   available: [
     "Unlimited orders",
@@ -75,6 +119,10 @@ export const proPlanFeatures = {
   ],
   notAvailable: [],
 };
+
+/**
+ * @type {plan} freePlanFeatures
+ */
 export const freePlanFeatures = {
   available: [
     "Unlimited orders",
@@ -88,6 +136,15 @@ export const freePlanFeatures = {
   ],
 };
 
+/**
+ * @typedef faq - store the question and answers for frequently ask questions
+ * @property {string} question
+ * @property {string} answer
+ */
+
+/**
+ * @type {faq[]} faqData
+ */
 export const faqData = [
   {
     question: "How can FEASTO help me get my shop online?",
@@ -126,6 +183,23 @@ export const faqData = [
   },
 ];
 
+/**
+ * @typedef pageLinks
+ * @property {string} title
+ * @property {string} link - url of the pages provided in the footer section
+ */
+
+/**
+ * @typedef dataFooter
+ * @property {pageLinks[]} company
+ * @property {pageLinks[]} template
+ * @property {pageLinks[]} resources
+ * @property {pageLinks[]} features
+ */
+
+/**
+ * @type {dataFooter}
+ */
 export const dataForFooter = {
   company: [
     {

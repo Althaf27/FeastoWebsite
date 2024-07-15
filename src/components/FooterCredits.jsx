@@ -1,6 +1,11 @@
 import { FaHeart } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
+/**
+ * copyright section
+ * @returns
+ * @example
+ * <FooterCredits/>
+ */
 function FooterCredits() {
   return (
     <div className="bg-primary-color">
@@ -9,9 +14,12 @@ function FooterCredits() {
           <p className="text-white font-inter text-[16px] ">
             Designed & Developed with{" "}
             <FaHeart color="white" className="inline" /> by{" "}
-            <Link to="/" className="underline underline-offset-2 ">
+            <a
+              href="https://www.cogntix.com/"
+              className="underline underline-offset-2 "
+            >
               Cogntix
-            </Link>
+            </a>
           </p>
           <p className="text-white font-inter text-[16px] ">
             &copy; 2022 Feasto. All rights reserved.

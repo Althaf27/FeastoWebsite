@@ -1,5 +1,12 @@
 import checkMarkGray from "../assets/icons/checkMarkGray.svg";
 
+/**
+ * Represent a text with gray color
+ * @param {string} children data to be shown
+ * @returns
+ * @example
+ * <UncheckText>Custom domain</UncheckText>
+ */
 function UncheckText({ children }) {
   return (
     <div className="flex gap-3">

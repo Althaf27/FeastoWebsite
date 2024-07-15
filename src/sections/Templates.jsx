@@ -1,14 +1,23 @@
 import TemplateCard from "../components/TemplateCard";
+
+//data
 import { templateDetails } from "../constants/data";
 
+/**
+ * Renders the section for display the starter templates
+ * @see {@link TemplateCard}
+ * @returns
+ * @example
+ * <Templates/>
+ */
 function Templates() {
   return (
-    <div className="pt-20 px-[16px] pb-[160px] lg:px-[60px] xl:px-[120px]">
-      <div className="px-16 pb-[60px] ">
+    <div className="mt-20 mx-[16px] mb-[160px] lg:mx-[60px] xl:mx-[120px]">
+      <div className="mx-16 mb-[60px] ">
         <p className="text-center text-primary-color uppercase text-[14px] font-inter font-medium lg:text-[18px]">
           Starter templates
         </p>
-        <h2 className="text-center text-gray-800 text-[36px] font-black font-inter leading-snug tracking-tight pt-[8px] lg:text-[52px] lg:tracking-normal lg:leading-normal">
+        <h2 className="text-center text-gray-800 text-[36px] font-black font-inter leading-snug tracking-tight mt-[8px] lg:text-[52px] lg:tracking-normal lg:leading-normal">
           Kickstart your online stores <br className="hidden lg:block" /> with
           beautiful templates
         </h2>

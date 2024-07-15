@@ -1,3 +1,14 @@
+/**
+ * Render a contact detail
+ *
+ * @param {Object} icon - imported icons
+ * @param {string} title - type of the contact
+ * @param {string} data - contact data
+ * @returns
+ *
+ * @example
+ * <ContactCard icon={icon} title="Email address" data="hello@feasto.io"/>
+ */
 function ContactCard({ icon, title, data }) {
   return (
     <div

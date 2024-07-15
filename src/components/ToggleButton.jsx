@@ -1,7 +1,14 @@
 import { useDispatch } from "react-redux";
-import { selectPlan, setPlan } from "../slices/toggleSlice";
 import { useSelector } from "react-redux";
+import { selectPlan, setPlan } from "../slices/toggleSlice";
 
+/**
+ *Render a button which change the state in the redux data store to either monthly or annually
+
+ * @returns 
+ @example
+ <ToggleButton/>
+ */
 function ToggleButton() {
   const plan = useSelector(selectPlan);
   const dispatch = useDispatch();

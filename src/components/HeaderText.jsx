@@ -2,6 +2,15 @@ import line from "../assets/icons/line.svg";
 import Button from "./Button";
 import OutlineButton from "./OutlineButton";
 
+/**
+ * Display the title and action buttons in the header
+ * @see {@link Button} 
+ * @see {@link OutlineButton} 
+ * @component
+ * 
+ *@example 
+ <HeaderText/>
+ */
 function HeaderText() {
   return (
     <div className="pt-20 flex flex-col items-center">

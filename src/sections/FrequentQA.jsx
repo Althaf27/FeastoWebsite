@@ -1,6 +1,14 @@
 import { useState } from "react";
 import ExpandableQA from "../components/ExpandableQA";
+
+//data
 import { faqData } from "../constants/data";
+
+/**
+ * Render the section for frequently asked questions
+ * @see {@link ExpandableQA}
+ * @returns
+ */
 
 function FrequentQA() {
   const [opened, setOpened] = useState(0);
@@ -9,7 +17,7 @@ function FrequentQA() {
     index === opened ? setOpened(-1) : setOpened(index);
   }
   return (
-    <div className="mt-[110px] px-4 lg:px-[60px] xl:px-[120px]">
+    <div className="mt-[110px] mx-4 lg:px-[60px] xl:px-[120px]">
       <div>
         <p className="uppercase font-inter text-primary-color font-medium text-[14px] text-center lg:text-[18px]">
           Frequently asked questions

@@ -1,9 +1,20 @@
 import OutlineButton from "./OutlineButton";
-
-import { freePlanFeatures } from "../constants/data";
 import CheckText from "./CheckText";
 import UncheckText from "./UncheckText";
 
+//data
+import { freePlanFeatures } from "../constants/data";
+
+/**
+ * Render free plan card
+ * @see {@link CheckText}
+ * @see {@link UncheckText}
+ * @see {@link OutlineButton}
+ * @returns
+ *
+ * @example
+ * <FreePriceCard/>
+ */
 function FreePriceCard() {
   return (
     <div className="shadow-lg shadow-slate-300 rounded-xl max-w-[450px]">
@@ -15,7 +26,7 @@ function FreePriceCard() {
           $0
         </p>
       </div>
-      <div className="flex flex-col px-9 mt-7 mb-9">
+      <div className="flex flex-col mx-9 mt-7 mb-9">
         <OutlineButton className="py-[18px]">Start for FREE</OutlineButton>
         <div className="flex flex-col gap-[12px] mt-6">
           {freePlanFeatures.available.map((data, index) => (

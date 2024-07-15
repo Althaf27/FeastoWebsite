@@ -1,7 +1,29 @@
+/**
+ *Renders the statistics about business
+
+ * @param {string} children - name of the stat
+ * @param {string} className - to setup the absolute positioning values
+ * @param {string} data - stats value
+ * @param {boolean} perDay - whether need to display the day text or not
+ * @param {object} icon - icon to display
+ * @returns
+ * @example 
+ * import total from "../assets/icons/total.png"
+ * 
+ * <ExploreStatsCard
+      className="absolute -bottom-5 right-6"
+      data={"12,500"}
+      perDay={false}
+      icon={total}
+  >
+      Total customers
+  </ExploreStatsCard>
+
+ */
 function ExploreStatsCard({ children, className, data, perDay, icon }) {
   return (
     <div
-      className={`flex items-center bg-white rounded-md shadow-md shadow-slate-500 px-2 py-[6px] pr-6 gap-3 ${className}`}
+      className={`flex items-center bg-white rounded-md shadow-md shadow-slate-400 px-2 py-[6px] pr-6 gap-3 ${className}`}
     >
       <img src={icon} alt={`${children} icon`} width={32} height={32} />
       <div>

@@ -1,5 +1,5 @@
-import { HashLink } from "react-router-hash-link";
-
+import { useDispatch } from "react-redux";
+import { setNavigation } from "../slices/navigationSlice";
 /**
  * To display the navigation items with the styles for click on a item
  * @component
@@ -17,6 +17,11 @@ import { HashLink } from "react-router-hash-link";
  *<NavItem onClick={handleClick} currentSelected={selectedItem}>Resources</NavItem>
  */
 function NavItem({ children, onClick, currentSelected }) {
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(setNavigation(children.toLowerCase()));
+  };
   return (
     <div
       className={`py-[10px] px-[12px] hover:bg-red-50 cursor-pointer ${
@@ -26,8 +31,8 @@ function NavItem({ children, onClick, currentSelected }) {
       } md:hover:bg-white md:p-0 `}
       onClick={() => onClick(children)}
     >
-      <HashLink
-        to={`#${children.toLowerCase()}`}
+      <div
+        onClick={handleClick}
         className={`text-base font-medium leading-6 ${
           children === currentSelected
             ? "text-primary-color"
@@ -36,7 +41,7 @@ function NavItem({ children, onClick, currentSelected }) {
         ${children !== currentSelected ? "md:hover:text-gray-500" : ""} `}
       >
         {children}
-      </HashLink>
+      </div>
     </div>
   );
 }

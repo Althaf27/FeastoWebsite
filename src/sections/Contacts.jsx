@@ -1,8 +1,14 @@
 import ContactCard from "../components/ContactCard";
+
+//icons
 import envelop from "../assets/icons/envelope.svg";
 import phone from "../assets/icons/phone.svg";
 import location from "../assets/icons/location.svg";
 
+/**
+ * Render the contact section
+ * @returns
+ */
 function Contacts() {
   return (
     <div className="mt-[60px] bg-gray-50 px-4 py-10 border border-gray-300 mx-4 rounded-lg lg:mx-[60px] xl:mx-[120px]">

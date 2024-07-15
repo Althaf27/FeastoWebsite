@@ -4,6 +4,9 @@ import MobileImages from "../components/MobileImages";
 
 /**
  * Hero section of the home page reperesent the title, mobile screen images and customer branch logos
+ * @see {@link HeaderText},
+ * @see {@link MobileImages},
+ * @see {@link BrancdScroll},
  * @component
  * @example
  * <Hero/>

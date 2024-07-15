@@ -2,8 +2,8 @@
  * Primary Button with the background set to red color
  * @component
  * @param {string} children - content to display in the button
- * @param {string} className - additional styles to set the paddings
- * @param {Function} handleClick - handle the behaviour of the button click
+ * @param {string} className - additional styles for set the paddings
+ * @param {function} handleClick - handle the behaviour of the button click
  * @returns {JSX.Element} The primary Button
  * @example
  * //Render the button with text sign up for free

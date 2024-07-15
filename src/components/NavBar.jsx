@@ -1,14 +1,20 @@
 import logoFeato from "../assets/images/logofeasto.png";
 import menu from "../assets/icons/menu.png";
 import menuX from "../assets/icons/menuX.png";
+
 import Button from "./Button";
 import NavItem from "./NavItem";
-import { useState } from "react";
 import OutlineButton from "./OutlineButton";
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 /**
  * Used to display a responsive navigation bar which is fixed on top.
  *Can change the handleSignUp and handleDemo functions
+ * @see {@link Button}
+ * @see {@link OutlineButton}
+ * @see {@link NavItem}
  * @component
  * @example
  *
@@ -63,22 +69,24 @@ function NavBar() {
             src={openNav ? menuX : menu}
             onClick={handleOpenNav}
           />
-          <img
-            src={logoFeato}
-            alt="feasto logo"
-            className="object-contain w-[110px] lg:w-[170px]"
-          />
+          <Link to="/">
+            <img
+              src={logoFeato}
+              alt="feasto logo"
+              className="object-contain w-[110px] lg:w-[170px]"
+            />
+          </Link>
           <nav
             className={`absolute grid top-[80px] left-0 right-0 bg-white pt-[8px] pb-[16px] ${
               openNav
                 ? "grid-rows-[1fr] opacity-100 shadow-md"
                 : "grid-rows-[0fr] opacity-0"
-            } overflow-hidden transition-all duration-500 max-h-[500px] ease-in-out  md:static md:h-auto md:opacity-100 md:shadow-none md:grid-rows-[1fr]`}
+            } overflow-hidden transition-all duration-500 ease-in-out max-h-[500px] ease-in-out  md:static md:h-auto md:opacity-100 md:shadow-none md:grid-rows-[1fr]`}
           >
             <ul
               className={`grid md:flex-row ${
                 openNav ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-              } overflow-hidden md:h-auto lg:gap-[40px] md:gap-5 transition-all duration-500 md:flex md: flex-col`}
+              } overflow-hidden md:h-auto lg:gap-[40px] md:gap-5 transition-all duration-500 ease-in-out md:flex md: flex-col`}
             >
               <li>
                 <NavItem

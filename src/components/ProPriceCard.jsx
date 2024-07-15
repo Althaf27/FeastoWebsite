@@ -1,11 +1,22 @@
 import Button from "../components/Button";
 import CheckText from "./CheckText";
 import UncheckText from "./UncheckText";
+
 import { useSelector } from "react-redux";
 import { selectPlan } from "../slices/toggleSlice";
 
+//data
 import { proPlanFeatures } from "../constants/data";
 
+/**
+ * Display the pro price card
+ * @see {@link CheckText}
+ * @see {@link UncheckText}
+ * @see {@link Button}
+ * @returns
+ * @example
+ * <ProPriceCard/>
+ */
 function ProPriceCard() {
   const plan = useSelector(selectPlan);
 
@@ -19,8 +30,8 @@ function ProPriceCard() {
         </div>
       ) : null}
 
-      <div className="flex flex-col items-center pt-9 pb-7">
-        <p className="font-inter font-semibold text-[18px] text-primary-color pb-5">
+      <div className="flex flex-col items-center mt-9 mb-7">
+        <p className="font-inter font-semibold text-[18px] text-primary-color mb-5">
           PRO - {plan === "annually" ? "Annual" : "Monthly"} plan
         </p>
         {plan === "annually" ? (
@@ -36,7 +47,7 @@ function ProPriceCard() {
           {plan === "annually" ? "Monthly, Billed annually" : "Billed monthly"}
         </p>
       </div>
-      <div className="flex flex-col px-9 pb-9 gap-6">
+      <div className="flex flex-col mx-9 mb-9 gap-6">
         <Button className="py-[18px]">Get 14 days free trail</Button>
         <div className="flex flex-col gap-[12px]">
           {proPlanFeatures.available.map((data, index) => (
