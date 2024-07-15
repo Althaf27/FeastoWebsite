@@ -1,32 +1,39 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { brandLogos } from "../assets/images/customerLogos";
 import { useRef } from "react";
 
+/**
+ * Horizontally scrolling custom logo component
+ * @component
+ * @returns
+ *
+ * @example
+ * <BrancdScroll/>
+ *
+ */
 function BrancdScroll() {
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    let scrollInterval;
-
-    const startScrolling = () => {
-      scrollInterval = setInterval(() => {
-        scrollContainer.scrollLeft += 1;
-        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-          scrollContainer.scrollLeft = 0;
-        }
-      }, 20);
-    };
-
-    startScrolling();
-
-    return () => clearInterval(scrollInterval);
-  }, []);
   return (
-    <div className="overflow-hidden ">
-      <div ref={scrollRef} className="flex gap-9  space-x-4 animate-scroll">
+    <div className="max-w-[1440px]  overflow-hidden flex ">
+      <div className="flex space-x-16 animate-loop-scroll    overflow-hidden">
         {brandLogos.map((logo, index) => (
-          <img key={index} src={logo} alt="brand logos" />
+          <img
+            key={index}
+            src={logo}
+            alt="brand logos"
+            width={80}
+            height={80}
+          />
+        ))}
+      </div>
+      <div className="flex space-x-16 animate-loop-scroll   " aria-hidden>
+        {brandLogos.map((logo, index) => (
+          <img
+            key={index}
+            src={logo}
+            alt="brand logos"
+            width={80}
+            height={80}
+          />
         ))}
       </div>
     </div>

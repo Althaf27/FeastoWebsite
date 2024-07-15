@@ -1,5 +1,21 @@
 import { HashLink } from "react-router-hash-link";
 
+/**
+ * To display the navigation items with the styles for click on a item
+ * @component
+ * @param {string} children - Navigation item text
+ * @param {Function} onClick - function should change the selected item this will execute by passing the item's text value
+ * @param {string} currentSelected -current selected navigation item
+ * @returns
+ * @example
+ * const [selectedItem,setSelectedItem] = useState("");
+ *
+ * const handleClick = (item)=>{
+ *  setSelectedItem(item);
+ * }
+ *
+ *<NavItem onClick={handleClick} currentSelected={selectedItem}>Resources</NavItem>
+ */
 function NavItem({ children, onClick, currentSelected }) {
   return (
     <div
