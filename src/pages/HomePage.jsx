@@ -16,6 +16,8 @@ import { setNavigation } from "../slices/navigationSlice";
  * Used to display when the user navigate to the root url (`/`).
  *@component
  * @returns {JSX.Element} The home page of the website
+ * @example
+ * <HomePage/>
  */
 function HomePage() {
   const dispatch = useDispatch();

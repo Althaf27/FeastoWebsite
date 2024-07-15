@@ -4,10 +4,11 @@ import FreePriceCard from "../components/FreePriceCard";
 
 /**
  * Render pricing and plans section
+ * @component
  * @see {@link ToggleButton}
  * @see {@link ProPriceCard}
  * @see {@link FreePriceCard}
- * @returns
+ * @returns {JSX.Element}
  *
  * @example
  * <Pricing/>

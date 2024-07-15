@@ -5,8 +5,9 @@ import { templateDetails } from "../constants/data";
 
 /**
  * Renders the section for display the starter templates
+ * @component
  * @see {@link TemplateCard}
- * @returns
+ * @returns {JSX.Element}
  * @example
  * <Templates/>
  */

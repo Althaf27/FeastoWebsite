@@ -6,7 +6,7 @@ import screen4 from "../assets/images/screen4.png";
 /**
  * Renders four mobile screen images horizontally
  * @component
- * @returns
+ * @returns {JSX.Element}
  * @example
  * <MobileImages/>
  */

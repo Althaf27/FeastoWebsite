@@ -3,9 +3,10 @@ import FooterLinks from "../components/FooterLinks";
 
 /**
  * Render the footer seciton
+ * @component
  * @see {@link FooterLinks}
  * @see {@link FooterCredits}
- * @returns
+ * @returns  {JSX.Element}
  *
  * @example
  * <Footer/>

@@ -6,7 +6,7 @@ import { setNavigation } from "../slices/navigationSlice";
  * @param {string} children - Navigation item text
  * @param {Function} onClick - function should change the selected item this will execute by passing the item's text value
  * @param {string} currentSelected -current selected navigation item
- * @returns
+ * @returns {JSX.Element}
  * @example
  * const [selectedItem,setSelectedItem] = useState("");
  *

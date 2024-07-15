@@ -6,8 +6,9 @@ import ExploreCard from "./ExploreCard";
 
 /**
  * Renders the details about the feasto
+ * @component
  * @see {@link ExploreCard}
- * @returns
+ * @returns {JSX.Element}
  *
  * @example
  * <ExploreText/>

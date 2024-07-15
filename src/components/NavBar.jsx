@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
  * @see {@link OutlineButton}
  * @see {@link NavItem}
  * @component
+ * @returns {JSX.Element}
  * @example
  *
  * <NavBar/>
@@ -81,7 +82,7 @@ function NavBar() {
               openNav
                 ? "grid-rows-[1fr] opacity-100 shadow-md"
                 : "grid-rows-[0fr] opacity-0"
-            } overflow-hidden transition-all duration-500 ease-in-out max-h-[500px] ease-in-out  md:static md:h-auto md:opacity-100 md:shadow-none md:grid-rows-[1fr]`}
+            } overflow-hidden transition-all duration-500  max-h-[500px] ease-in-out  md:static md:h-auto md:opacity-100 md:shadow-none md:grid-rows-[1fr]`}
           >
             <ul
               className={`grid md:flex-row ${

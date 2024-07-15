@@ -1,12 +1,12 @@
 /**
  *Renders the statistics about business
-
+ * @component
  * @param {string} children - name of the stat
  * @param {string} className - to setup the absolute positioning values
  * @param {string} data - stats value
  * @param {boolean} perDay - whether need to display the day text or not
  * @param {object} icon - icon to display
- * @returns
+ * @returns {JSX.Element}
  * @example 
  * import total from "../assets/icons/total.png"
  * 

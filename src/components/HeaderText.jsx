@@ -4,11 +4,12 @@ import OutlineButton from "./OutlineButton";
 
 /**
  * Display the title and action buttons in the header
+ * @component
  * @see {@link Button} 
  * @see {@link OutlineButton} 
- * @component
+ * @returns {JSX.Element}
  * 
- *@example 
+ * @example 
  <HeaderText/>
  */
 function HeaderText() {

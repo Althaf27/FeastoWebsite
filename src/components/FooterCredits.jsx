@@ -2,7 +2,8 @@ import { FaHeart } from "react-icons/fa";
 
 /**
  * copyright section
- * @returns
+ * @component
+ * @returns {JSX.Element}
  * @example
  * <FooterCredits/>
  */

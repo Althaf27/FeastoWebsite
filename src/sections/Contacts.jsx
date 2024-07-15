@@ -7,7 +7,10 @@ import location from "../assets/icons/location.svg";
 
 /**
  * Render the contact section
- * @returns
+ * @component
+ * @returns  {JSX.Element}
+ * @example
+ * <Contacts/>
  */
 function Contacts() {
   return (

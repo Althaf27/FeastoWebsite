@@ -2,8 +2,9 @@ import checkMarkGray from "../assets/icons/checkMarkGray.svg";
 
 /**
  * Represent a text with gray color
+ * @component
  * @param {string} children data to be shown
- * @returns
+ * @returns  {JSX.Element}
  * @example
  * <UncheckText>Custom domain</UncheckText>
  */

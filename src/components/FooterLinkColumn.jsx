@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 
 /**
  *Render the link column
+ * @component
  * @see {@link pageLinks}  - datatype of data
  * @param {{title,link}} data
  * @param {string} title
- * @returns
+ * @returns {JSX.Element}
  * @example
  * const data ={title: "About us",link : "/aboutUs"}
  * <FooterLinkColumn data={data} title="Company"/>

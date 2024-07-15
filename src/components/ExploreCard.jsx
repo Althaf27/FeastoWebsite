@@ -1,8 +1,9 @@
 /**
  *Renders a features of the feasto
+ @component
  * @see  {@link exploreDataObject} - (format of the passed data )
  * @param {{imgURL:object, title: string, content :title}} data
- * @returns
+ * @returns {JSX.Element}
  *
  * @example
  * import icon from "../assets/icons/launch.svg"

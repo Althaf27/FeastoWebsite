@@ -8,7 +8,7 @@ import ExploreText from "../components/ExploreText";
  * @see {@link ExploreImage}
  * @see {@link ExploreText}
  * @component
- * @returns
+ * @returns  {JSX.Element}
  *
  * @example
  * <Explore/>

@@ -5,6 +5,12 @@
  * @param {string} className - to set additional styles like padding
  * @param {function} handleClick - to handle the click
  * @returns {JSX.Element}
+ * @example
+ ** //Render the button with text Demo
+ * const handleDemo = () =>{
+ *  //implement the behaviour
+ * }
+ * <OutlineButton className="py-2" handleClick={handleDemo}>Demo</OutlineButton>
  */
 function OutlineButton({ children, className, handleClick }) {
   return (

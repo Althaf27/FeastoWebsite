@@ -7,10 +7,11 @@ import { freePlanFeatures } from "../constants/data";
 
 /**
  * Render free plan card
+ * @component
  * @see {@link CheckText}
  * @see {@link UncheckText}
  * @see {@link OutlineButton}
- * @returns
+ * @returns {JSX.Element}
  *
  * @example
  * <FreePriceCard/>

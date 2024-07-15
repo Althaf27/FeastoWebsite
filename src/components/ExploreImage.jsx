@@ -16,9 +16,10 @@ import { customerResults } from "../constants/data";
 
 /**
  * Render four images in a grid with some details about customer stats
+ * @component
  * @see {@link ExploreStatsCard}
  * @component
- * @returns
+ * @returns {JSX.Element}
  * @example
  * <ExploreImage/>
  */

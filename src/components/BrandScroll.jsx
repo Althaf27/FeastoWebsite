@@ -3,13 +3,13 @@ import { brandLogos } from "../assets/images/customerLogos";
 /**
  * Horizontally scrolling for custom logo
  * @component
- * @returns
+ * @returns {JSX.Element}
  *
  * @example
- * <BrancdScroll/>
+ * <BrandScroll/>
  *
  */
-function BrancdScroll() {
+function BrandScroll() {
   return (
     <div className="max-w-[1440px]  overflow-hidden flex group">
       <div className="flex space-x-16 animate-loop-scroll    overflow-hidden group-hover:paused">
@@ -41,4 +41,4 @@ function BrancdScroll() {
   );
 }
 
-export default BrancdScroll;
+export default BrandScroll;

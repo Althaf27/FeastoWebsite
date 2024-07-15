@@ -10,10 +10,11 @@ import { proPlanFeatures } from "../constants/data";
 
 /**
  * Display the pro price card
+ * @component
  * @see {@link CheckText}
  * @see {@link UncheckText}
  * @see {@link Button}
- * @returns
+ * @returns {JSX.Element}
  * @example
  * <ProPriceCard/>
  */

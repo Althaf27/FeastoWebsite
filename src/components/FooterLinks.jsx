@@ -12,7 +12,8 @@ import { dataForFooter } from "../constants/data";
 
 /**
  * Render the links footer
- * @returns
+ * @component
+ * @returns {JSX.Element}
  * @example
  * <FooterLinks/>
  */

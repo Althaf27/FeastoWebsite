@@ -1,13 +1,14 @@
 import { GoPlus } from "react-icons/go";
 import { FiMinus } from "react-icons/fi";
 
-/**
- *
+/** 
+ * render a expandable answers for questions
+ * @component
  * @see {@link faq} - datatype used for data
  * @param {{question : string , answer : string}} data
  * @param {boolean} action - need to expand or not
  * @param {function} handleOpen
- * @returns
+ * @returns {JSX.Element}
  * @example
  * const const [opened, setOpened] = useState(0);
  * 

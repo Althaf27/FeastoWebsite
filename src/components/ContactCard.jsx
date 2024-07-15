@@ -1,10 +1,10 @@
 /**
  * Render a contact detail
- *
+ * @component
  * @param {Object} icon - imported icons
  * @param {string} title - type of the contact
  * @param {string} data - contact data
- * @returns
+ * @returns {JSX.Element}
  *
  * @example
  * <ContactCard icon={icon} title="Email address" data="hello@feasto.io"/>

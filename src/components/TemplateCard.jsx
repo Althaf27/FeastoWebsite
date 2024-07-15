@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 
 /**
  * Display the template card
+ * @component
  * @see {@link templateDetail} - (datatype of details)
  * @param {{imgURL:object, title: string, content: string, url: string}} <details></details>
- * @returns
+ * @returns  {JSX.Element}
  * @example
  * const details = {
  * imgURL : ,

@@ -6,8 +6,11 @@ import { faqData } from "../constants/data";
 
 /**
  * Render the section for frequently asked questions
+ * @component
  * @see {@link ExpandableQA}
- * @returns
+ * @returns  {JSX.Element}
+ * @example
+ * <FrequentQA/>
  */
 
 function FrequentQA() {
