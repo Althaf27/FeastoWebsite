@@ -7,7 +7,8 @@ import NavItem from "./NavItem";
 import OutlineButton from "./OutlineButton";
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setNavigation } from "../slices/navigationSlice";
 
 /**
  * Used to display a responsive navigation bar which is fixed on top.
@@ -24,6 +25,7 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const [openNav, setOpenNav] = useState(false);
   const [selectedItem, setSelectedItem] = useState("");
+  const dispatch = useDispatch();
 
   /**
    * when click on a navigation link it changes the openNav state which is used for make the navigation as a toggle
@@ -61,6 +63,7 @@ function NavBar() {
   const handleGetDemo = () => {
     console.log("need to implement");
   };
+
   return (
     <section className="border-b border-gray-200 shadow-md fixed left-0 right-0 top-0 bg-white z-50">
       <div className="flex px-[16px] h-[80px]  justify-between items-center  md:h-[104px]  lg:px-[60px] xl:px-[120px] max-container">
@@ -70,13 +73,14 @@ function NavBar() {
             src={openNav ? menuX : menu}
             onClick={handleOpenNav}
           />
-          <Link to="/">
-            <img
-              src={logoFeato}
-              alt="feasto logo"
-              className="object-contain w-[110px] lg:w-[170px]"
-            />
-          </Link>
+
+          <img
+            src={logoFeato}
+            alt="feasto logo"
+            className="object-contain w-[110px] lg:w-[170px]"
+            onClick={() => dispatch(setNavigation("home"))}
+          />
+
           <nav
             className={`absolute grid top-[80px] left-0 right-0 bg-white pt-[8px] pb-[16px] ${
               openNav

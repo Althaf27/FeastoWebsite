@@ -26,6 +26,7 @@ function HomePage() {
 
   const pricingRef = useRef(null);
   const templateRef = useRef(null);
+  const heroRef = useRef(null);
 
   //based on the redux value scroll to the section
   if (navigationItem === "pricing" && pricingRef.current) {
@@ -39,13 +40,19 @@ function HomePage() {
     dispatch(setNavigation(""));
   }
 
+  if (navigationItem === "home" && heroRef.current) {
+    const offsetTop = heroRef.current.offsetTop - 130;
+    window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    dispatch(setNavigation(""));
+  }
+
   //need to implement for the other navigation items after implement the sections for that
 
   return (
     <>
       <header>
         <NavBar />
-        <section className="max-container">
+        <section className="max-container" ref={heroRef}>
           <Hero />
         </section>
       </header>
