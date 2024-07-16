@@ -6,6 +6,11 @@
 - Responsive website
 
 
+## Documentation
+You can find the documentation for this project
+[here](https://althaf27.github.io/FeastoDocs/global.html#BrandScroll)
+
+
 ## Tech Stack
 - React
 - Tailwind CSS
@@ -28,9 +33,7 @@ npm install
 npm run dev        
 ```
 
-## Documentation
-You can find the documentation for this site
-[Link](https://althaf27.github.io/FeastoDocs/global.html#BrandScroll)
+
 
 
 ## 🙇 Author
