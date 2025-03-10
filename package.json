@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "doc": "jsdoc -c jsdoc.json",
     "generate-docs": "jsdoc --configure jsdoc.json --verbose",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
