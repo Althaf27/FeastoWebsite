@@ -22,7 +22,7 @@ import { setNavigation } from "../slices/navigationSlice";
 function HomePage() {
   const dispatch = useDispatch();
   const navigationItem = useSelector(selectNavigationItem);
-  console.log(navigationItem);
+  // console.log(navigationItem);
 
   const pricingRef = useRef(null);
   const templateRef = useRef(null);
@@ -31,6 +31,7 @@ function HomePage() {
   //based on the redux value scroll to the section
   if (navigationItem === "pricing" && pricingRef.current) {
     const offsetTop = pricingRef.current.offsetTop - 130;
+    // console.log(pricingRef.current.offsetTop);
     window.scrollTo({ top: offsetTop, behavior: "smooth" });
     dispatch(setNavigation(""));
   }
